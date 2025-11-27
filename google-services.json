@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "476618597742",
+    "project_id": "ficha-a73c7",
+    "storage_bucket": "ficha-a73c7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:476618597742:android:6e0cd84535fc204d018d7f",
+        "android_client_info": {
+          "package_name": "com.example.ficha_de_exercicios"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANPolZVQUecRAT2IH139JBYp7DRp7P9VA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
