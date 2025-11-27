@@ -193,71 +193,71 @@ class RotinaPage extends StatelessWidget {
                       },
 
                       child: Padding(
-  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-  child: Row(
-    crossAxisAlignment: CrossAxisAlignment.start,
-    children: [
-      Icon(
-        getIconForEquipment(e.tipoEquipamento),
-        color: Colors.purple,
-        size: 60,
-      ),
-      const SizedBox(width: 20),
-      Expanded(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center, // centraliza horizontalmente
-          children: [
-            // Nome do exercício
-            Text(
-              e.nome,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            const SizedBox(height: 8),
+                        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Icon(
+                              getIconForEquipment(e.tipoEquipamento),
+                              color: Colors.purple,
+                              size: 60,
+                            ),
+                            const SizedBox(width: 20),
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.center, // centraliza horizontalmente
+                                children: [
+                                  // Nome do exercício
+                                  Text(
+                                    e.nome,
+                                    textAlign: TextAlign.center,
+                                    style: const TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  const SizedBox(height: 8),
 
-            // Grupo Muscular • Séries x Repetições • Carga
-            Text(
-              "${e.grupoMuscular} • ${e.series} x ${e.repeticoes} • ${e.carga} kg",
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                color: Colors.white70,
-                fontSize: 14,
-                fontWeight: FontWeight.w500,
-              ),
-            ),
+                                  // Grupo Muscular • Séries x Repetições • Carga
+                                  Text(
+                                    "${e.grupoMuscular} • ${e.series} x ${e.repeticoes} • ${e.carga} kg",
+                                    textAlign: TextAlign.center,
+                                    style: const TextStyle(
+                                      color: Colors.white70,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
 
-            // Observações (mantidas alinhadas à esquerda)
-            if (e.observacoes != null && e.observacoes!.trim().isNotEmpty) ...[
-              const SizedBox(height: 12),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Icon(Icons.sticky_note_2, size: 18, color: Colors.white38),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: Text(
-                      e.observacoes!,
-                      style: const TextStyle(
-                        color: Colors.white38,
-                        fontSize: 13,
-                        fontStyle: FontStyle.italic,
-                        height: 1.4,
+                                  // Observações (mantidas alinhadas à esquerda)
+                                  if (e.observacoes != null && e.observacoes!.trim().isNotEmpty) ...[
+                                    const SizedBox(height: 12),
+                                    Row(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        const Icon(Icons.sticky_note_2, size: 18, color: Colors.white38),
+                                        const SizedBox(width: 8),
+                                        Expanded(
+                                          child: Text(
+                                            e.observacoes!,
+                                            style: const TextStyle(
+                                              color: Colors.white38,
+                                              fontSize: 13,
+                                              fontStyle: FontStyle.italic,
+                                              height: 1.4,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ],
-        ),
-      ),
-    ],
-  ),
-),
 
                     ),
                   ),

@@ -21,7 +21,6 @@ class Exercicio {
     this.observacoes,
   });
 
-  // Cria um objeto Exercicio a partir de um DocumentSnapshot do Firestore
   factory Exercicio.fromFirestore(DocumentSnapshot doc) {
     final data = doc.data() as Map<String, dynamic>;
     return Exercicio(
